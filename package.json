@@ -1,0 +1,10 @@
+{
+    "name": "easy-split web app",
+    "title": "EASY_SPLIT",
+    "version": "1.0.1",
+    "author": "Priya Mandal",
+    "repository": {
+        "type": "git",
+   	"url" : ""
+    }
+}
