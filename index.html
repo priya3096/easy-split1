@@ -55,7 +55,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
             		<li><a href="#" data-toggle="modal" data-target="#login-modal" ><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            		<li><a href="#"><span class="glyphicon glyphicon-user"></span> SignUp</a></li>
+            		<li><a href="#" data-toggle="modal" data-target="#signup-modal"><span class="glyphicon glyphicon-user"></span> SignUp</a></li>
           		</ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -132,9 +132,9 @@
         </div>
     </section>
 
-    <!-- Modal -->
+    <!-- Login Modal -->
 
- <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+ 	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
     	  <div class="modal-dialog">
 				<div class="loginmodal-container">
 					<h1>Login to Your Account</h1><br>
@@ -149,7 +149,23 @@
 				  </div>
 				</div>
 			</div>
-		  </div>
+	</div>
+	<!-- signup Modal  -->
+	<div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	  <div class="modal-dialog">
+				<div class="loginmodal-container">
+					<h1>Signup for free!</h1><br>
+				  <form>
+					<input type="text" name="user" placeholder="Username">
+					<input type="password" name="pass" placeholder="Password">
+					<input type="password" name="pass" placeholder="Confirm Password">
+					<input type="submit" name="login" class="login loginmodal-submit" value="Login">
+				  </form>
+				</div>
+			</div>
+	</div>
+
+
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    	 <script>
