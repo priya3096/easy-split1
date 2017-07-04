@@ -19,6 +19,7 @@
 	<link href="css/scrolling-nav.css" rel="stylesheet">
 	<link href="css/login-modal.css" rel="stylesheet">
 	<link href="css/nav.css" rel="stylesheet">
+	<link href="images/cover.jpg" rel="icon" />
 
 </head>
 
@@ -69,12 +70,35 @@
                 <div class="col-lg-12">
                     <h1>EASY-SPLIT</h1>
                     <h2>No Hurry, No Worry...Just Savoury</h2>
-                    <figure>
-                    	<img src="images/restaurant.jpg" style="width:604px;height:278px";>
-					  	<figcaption>source:https://in.pinterest.com/pin/409968372308770062/</figcaption>
-					</figure><br><br>
-
-                    <a class="btn btn-default page-scroll" href="#about">Know more!</a>
+                    <div class="container">
+						<div class="row">
+						<div id="myCarousel" class="carousel  slide">
+  					<!-- Dot Indicators -->
+  						<ol class="carousel-indicators">
+	    					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	    					<li data-target="#myCarousel" data-slide-to="1"></li>
+	    					<li data-target="#myCarousel" data-slide-to="2"></li>
+	    					<li data-target="#myCarousel" data-slide-to="3"></li>
+  						</ol>
+  					<!-- Items -->
+  						<div class="carousel-inner">
+	    					<div class="active item">  <center><img src="images/restaurant.jpg" style="width:604px;height:328px" class="img-responsive"></center></div>
+	    					<div class="item"> <center> <img src="images/Service-tax-on-restaurant.png" style="width:604px;height:328px" class="img-responsive"></center></div>
+	    					<div class="item"> <center> <img src="images/splitting-bill-friends.jpg" style="width:604px;height:328px" class="img-responsive"></center></div>
+	    					<div class="item"> <center> <img src="images/spltbl.jpg" style="width:604px;height:328px" class="img-responsive"></center></div>
+  						</div>
+  					<!-- Navigation -->
+	   					<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+	            			<span class="glyphicon glyphicon-chevron-left"></span>
+	        			</a>
+	        			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+	            			<span class="glyphicon glyphicon-chevron-right"></span>
+	        			</a>
+						</div>
+						</div>
+					</div>
+					<br>
+                    <a class="btn btn-primary page-scroll" href="#about">Know more!</a>
                 </div>
             </div>
         </div>
@@ -128,6 +152,11 @@
 		  </div>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   	 <script>
+   	 	$(document).ready(function() {
+		$('.carousel').carousel({interval: 2000});
+		});
+	</script>
 
 
 </body>
