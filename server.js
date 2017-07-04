@@ -12,7 +12,7 @@ app.get('/home', function (req, res) {
 app.get('/output', function (req, res) {
     res.sendFile('views/output.html',{root});
 });
-app.use(express.static('views/public',{root}));
+app.use(express.static('views'));
 app.listen(8080, function () {
   console.log('Example app listening on port 8080!');
 });
